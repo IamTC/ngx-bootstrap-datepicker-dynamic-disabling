@@ -25,7 +25,7 @@ export class BsDatePickerUtils {
         !this.lastKnownViewDate ||
         this.lastKnownViewDate.toDateString() !== date.toDateString()
       ) {
-        if (data.view.mode === 'month') {
+        if (data.view.mode === 'day') {
           this.lastKnownViewDate = date;
           this.viewChanged.next(data.view.date);
         }
